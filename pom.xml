@@ -94,19 +94,18 @@
 	</dependencies>
 	
 	<distributionManagement>
-	<!--
 	   <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	    <url>http://172.31.29.224:9980/mithuntechnologies/repository/axisbank-releases/</url>-->
-	    </repository>-->
-	    <!--
+	    <url>http://65.0.134.44:9980/nexus/repository/wallmart-release/</url>-->
+	    </repository>
+	
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	  	<url>http://172.31.29.224:9980/mithuntechnologies/repository/axisbank-snapshot/</url>
+	  	<url>http://65.0.134.44:9980/nexus/repository/wallmart-snapshot/</url>
 	    </snapshotRepository>
-	    -->
+
 	</distributionManagement>
 	
 	<build>
