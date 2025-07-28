@@ -99,8 +99,8 @@
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	    <url>http://172.31.29.224:9980/mithuntechnologies/repository/axisbank-releases/</url>-->
-	    </repository>
-	    
+	    </repository>-->
+	    <!--
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
