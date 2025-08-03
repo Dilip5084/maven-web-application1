@@ -1,0 +1,25 @@
+node
+{
+	def MavenHome = tool name: "maven3.9.10"
+	stage('checkoutcode'){
+	git branch: 'development', url: 'https://github.com/Dilip5084/maven-web-application1.git'
+	}
+	
+	stage('Build'){
+	sh "${MavenHome}/bin/mvn clean package"
+	}
+  /*
+	stage('Execute Sonarqube Report'){
+	sh "${MavenHome}/bin/mvn clean sonar:sonar"
+	}
+	stage('UploadArtificatsinto Nexus'){
+	sh "${MavenHome}/bin/mvn clean deploy"
+	}
+	stage('Deploy Application in to Tomcat server)
+	{
+	sshagent(['30b756b5-73a3-4d6c-be46-2dacde820d00']) {
+	sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.30.181:/opt/apache-tomcat-9.0.107/webapps"
+    }
+	}
+ */
+}
